@@ -21,7 +21,6 @@ dishRouter.route('/')
     Dishes.create(req.body)
         .then((dish) => {
             res.statusCode = 200
-            console.log('Dish Created', dish)
             res.setHeader('Content-Type','application/json')
             res.json(dish)
         },(err) => next(err))
@@ -52,7 +51,6 @@ dishRouter.route('/:dishId')
             res.json(dish)
         }, (err) => next(err))
         .catch((err) => next(err))
-        
 })
 
 .post((req, res, next) => {
@@ -66,7 +64,6 @@ dishRouter.route('/:dishId')
     },{ new: true})
         .then((dish) => {
             res.statusCode = 200
-            console.log('Dish Created', dish)
             res.setHeader('Content-Type','application/json')
             res.json(dish)
         },(err) => next(err))
