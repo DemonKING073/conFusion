@@ -30,5 +30,5 @@ const leaderSchema = new Schema({
     }
 })
 
-const Leader = mongoose.model('Leader',leaderSchema)
-module.exports = Leader
+const Leaders = mongoose.model('Leader',leaderSchema)
+module.exports = Leaders
