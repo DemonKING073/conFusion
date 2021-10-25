@@ -28,6 +28,10 @@ const promoSchema = new Schema({
         required: true,
         min: 0,
     },
+    featured:{
+        type: Boolean,
+        default: false,
+    }
 },{
     timestamps:true
 })
