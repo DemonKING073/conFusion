@@ -3,7 +3,7 @@ const express = require('express')
 const promoRouter = express.Router()
 
 const mongoose = require('mongoose')
-const Promos = require('../models/promos')
+const Promos = require('../models/promotions')
 
 promoRouter.use(express.json())
 
